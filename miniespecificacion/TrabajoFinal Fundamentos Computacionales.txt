@@ -6,6 +6,7 @@
 5.      contador,i [0-n] <--0
 6.      bandera, l <-- True
 7.      opcion, i[0-n]
+        String result;
 8.      Mientras(bandera == True)entonces
 9.          contador <-- contador + 1
 10.          << "Inserte 1 para crear Facebook\n"
@@ -17,25 +18,25 @@
               + "Inserte 7 para crear Flickr"
 11.          >> opcion
 12.      Si(opcion == 1)entonces
-13.          crearFacebook()
+13.         result= crearFacebook()
 14.      De lo contrario
 15.        Si (opcion == 2)entonces
 16.          crearTwitter()
 17.          De lo contrario
 18.            Si (opcion == 3) entonces
-19.              crearWhatsapp()
+19.              result=crearWhatsapp()
 20.              De lo contrario
 21.                Si (opcion == 4)entonces
 22.                   crearTelegram()
 23.                  De lo contrario
 24.                    Si (opcion == 5)entonces
-25.                       crearSignal()
+25.                       result=crearSignal()
 26.                      De lo contrario
 27.                        Si (opcion == 6)entonces
 28.                           crearInstagram()
 29.                          De lo contrario
 30.                            Si (opcion == 7)entonces
-31.                               crearFlickr()
+31.                               result=crearFlickr()
 32.                              De lo contrario
 33.                                 Escribir "Error la opcion que presenta no"+
                                                  "se encuenta en el listado"
@@ -233,4 +234,18 @@ xy. funcion crearFlickr()
                 + "Correo Electronico: " + correoE +"\n"
 	rotarnar cadena
 xy. fin funcion crearFlickr
-        
+    FuncionObtenerMensaje ()
+      String mensaje final, x(200) [{a-z},{A-Z},{BS}]
+       String salida,x x(200) [{a-z},{A-Z},{BS}]
+        Para(i=0; i< mensajefinal.length;i++)
+            Si( a>= 1 && a<= 5)
+              Salida= mensajefinal[0]
+                Si( a>= 6 && a<= 15)
+                  Salida= mensajefinal[1]
+                    Si( a>= 16 )
+                       Salida= mensajefinal[2]
+                       Fin_si
+                 Fin_si
+             Fin_si
+      Retorna salida
+     Fin_funcionObetenerMensaje
