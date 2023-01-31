@@ -1,0 +1,236 @@
+----------------------Miniespesificacion------------------
+1. Inicio
+2. funcion principal()
+3.      cadena, x(200)[{a-z},{A-Z},{0-100},{BS}]
+4.      salida, x(200)[{a-z},{A-Z},{0-100},{BS}]
+5.      contador,i [0-n] <--0
+6.      bandera, l <-- True
+7.      opcion, i[0-n]
+8.      Mientras(bandera == True)entonces
+9.          contador <-- contador + 1
+10.          << "Inserte 1 para crear Facebook\n"
+              + "Inserte 2 para crear Twiter\n"
+              + "Inserte 3 para crear "Whatsapp\n"
+              + "Inserte 4 para crear Telegram\n"
+              + "Inserte 5 para crear Signal"\n
+              + "Inserte 6 para crear Instagram\n
+              + "Inserte 7 para crear Flickr"
+11.          >> opcion
+12.      Si(opcion == 1)entonces
+13.          crearFacebook()
+14.      De lo contrario
+15.        Si (opcion == 2)entonces
+16.          crearTwitter()
+17.          De lo contrario
+18.            Si (opcion == 3) entonces
+19.              crearWhatsapp()
+20.              De lo contrario
+21.                Si (opcion == 4)entonces
+22.                   crearTelegram()
+23.                  De lo contrario
+24.                    Si (opcion == 5)entonces
+25.                       crearSignal()
+26.                      De lo contrario
+27.                        Si (opcion == 6)entonces
+28.                           crearInstagram()
+29.                          De lo contrario
+30.                            Si (opcion == 7)entonces
+31.                               crearFlickr()
+32.                              De lo contrario
+33.                                 Escribir "Error la opcion que presenta no"+
+                                                 "se encuenta en el listado"
+                                        
+34.                                 Fin Si
+35.                             Fin Si
+36.                         Fin Si
+37.                     Fin Si
+38.                 Fin Si
+39.             Fin Si
+              Fin Si
+40.         << "Si desea salir ingrese (salir) para terminal el ciclo o (no) para seguir"
+41.         >> salida
+42.         Si (salida == "salir")entonces
+43.             bandera <-- false
+	    De lo contrario
+		Si(salida=="no")
+		  contador <-- contador + 1	
+44.         Fin si
+45.     Fin Mientras
+46.     obtenerMensaje(contador)
+47. Fin funcion principal
+
+
+// Comienso a declarar las funciones para crear las redes sociales
+47. funcion crearFacebook()
+48.     usuario, x(200)[{a-z},{A-Z},{0-100},{BS}]
+49.     edad, i[0-n]
+50.     ciudad, x(200)[{a-z},{A-Z},{0-100},{BS}]
+51.     pais, x(200)[{a-z},{A-Z},{0-100},{BS}]
+52.     correo, x(200)[{a-z},{A-Z},{0-100},{BS}]
+53.     << "Opción Facebook seleccionada"
+54.     << "Ingrese el Usuario"
+55.     >> usuario
+56.     << "Ingrese su Edad"
+57.     >> edad
+58.     << "Ingrese Ciudad"
+59.     >> ciudad
+60.     << "Ingrese Pais"
+61.     >> pais
+62.     << "Ingrese su Correo electrónico"
+63.     >> correo
+64.     << "Usuario: " + usuario + "\n" + "Edad: " + edad + "\n" +
+                  "Ciudad: "+ ciudad + "\n" + "País: "+ pais + "\n"
+                    + "Correo Electrónico: " + correo + "\n"
+	retornar usuario
+65. Fin funcion crearFacebook
+
+66. funcion crearTwitter()
+67.    cadena, x(200)[{a-z},{A-Z},{0-100},{BS}]
+68.    usuario, x(200)[{a-z},{A-Z},{0-100},{BS}]
+69.    edad, i[0-n]
+70.    ciudad, x(200)[{a-z},{A-Z},{0-100},{BS}]
+71.    correoE, x(200)[{a-z},{A-Z},{0-100},{BS}]	
+72.    nombres, x(200)[{a-z},{A-Z},{0-100},{BS}]
+73.    apellidos, x(200)[{a-z},{A-Z},{0-100},{BS}]
+74.    pais, x(200)[{a-z},{A-Z},{0-100},{BS}]
+75.    idioma, x(200)[{a-z},{A-Z},{0-100},{BS}]
+
+76.    << "--> Opcion de Twitter seleccionada <--"
+77.    << "Ingrese un Nombre de Usuario: "
+78.    >> usuario
+       << "Ingrese su Nombres completos: "
+80.    >> nombres
+       << "Ingrese sus Apellidos completos: "
+82.    >> apellidos
+       << "Ingrese su edad: "
+84.    >> edad
+       << "Ingrese su ciudad "
+86.    >> ciudad
+       << "Ingrese su pais: "
+88.    >> pais
+       << "Ingrese su Idioma: "
+90.    >> idioma
+       << "Ingrese su correo electronico: "
+92.    >> correoE
+
+93.    << "Usuario: " + usuario + "\n" + "Nombres: "+ nombres+ "\n"
+94.	+"Apellidos: "+ apellidos+  "\n" +"Edad: " + edad + "\n"
+95.     + "Ciudad: "+ ciudad + "\n" + "País: "+ pais + "\n"
+96. 	+"Idioma: "+ idioma + "\n"+ "Correo Electrónico: " + correoE + "\n"
+	retornar usuario
+. Fin funcion crearTwitter
+
+xy. funcion crearWhatsap()
+        cadena, x(200)[{a-z},{A-Z},{0-100},{BS}] = ""
+	user, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	edad, i[0-n]
+	ciudad, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	pais, x(200)[{a-z},{A-Z},{0-100},{BS}]
+        <<"--> OPCION WHATSAPP SELECCIONADA <--"
+        <<"Ingrese el usuario"
+        >> user 
+        >> "Ingrese # telefono"
+        >> tel 
+        << "Ingrese edad"
+        >> edad 
+        << "Ingrese Ciudad"
+        >> ciudad 
+        << "Ingrese Pais"
+        >> pais
+
+        cadena = "Datos ingresados whatsapp: \n"
+                + "Usuario: "+ user + "\n"
+                + "#Telefono: " + tel +"\n"
+                + "edad: "+ edad +"\n"
+                + "Ciudad: "+ ciudad + "\n"
+                + "Pais: "+ pais +"\n"
+                
+
+        retornar cadena
+xy. fin funcion crearWhatsap
+xy. funcion crearTelegram()
+	cadena, x(200)[{a-z},{A-Z},{0-100},{BS}] = ""
+	user, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	ciudad, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	pais, x(200)[{a-z},{A-Z},{0-100},{BS}]	
+	areaI, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	<<"--> OPCION TELEGRAM SELECCIONADA <--"
+	<<"Ingrese un nombre de Usuario:"
+        >> user 
+        >> "Ingrese # telefono"
+        >> tel 
+        << "Ingrese su Ciudad"
+        >> ciudad 
+        << "Ingrese su Pais"
+        >> pais
+	<< "Ingrese su Area de Interes: "
+	>> areaI
+	 cadena = "DATOS INGRESADOS TELEGRAM: \n"
+                + "Nombre de Usuario: "+ user + "\n"
+                + "#Telefono: " + tel +"\n"
+                + "Ciudad: "+ ciudad + "\n"
+                + "Pais: "+ pais +"\n",
+	        + "Area de Interes: "+ areaI +"\n"
+	<< cadena
+xy. fin funcion crearTelegram
+
+xy. funcion crearSignal()
+	cadena, x(200)[{a-z},{A-Z},{0-100},{BS}] = ""
+	user, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	ciudad, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	pais, x(200)[{a-z},{A-Z},{0-100},{BS}]	
+	hobby, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	<<"--> OPCION SIGNAL SELECCIONADA <--"
+	<<"Ingrese un nombre de Usuario:"
+        >> user 
+        >> "Ingrese # telefono"
+        >> tel 
+        << "Ingrese su Ciudad"
+        >> ciudad 
+        << "Ingrese su Pais"
+        >> pais
+	<< "Ingrese  Hobby Principal: "
+	>> hobby
+	 cadena = "DATOS INGRESADOS SIGNAL: \n"
+                + "Nombre de Usuario: "+ user + "\n"
+                + "#Telefono: " + tel +"\n"
+                + "Ciudad: "+ ciudad + "\n"
+                + "Pais: "+ pais +"\n",
+	        + "Hobby Principal: "+ hobby +"\n"
+	rotarnar cadena
+xy. fin funcion crearSignal
+
+97. funcion crearInstagram()
+98.     usuario, x(200)[{a-z},{A-Z},{0-100},{BS}]
+99.     edad, i[0-n]
+100.    ciudad, x(200)[{a-z},{A-Z},{0-100},{BS}]
+101.    correo, x(200)[{a-z},{A-Z},{0-100},{BS}]
+102.    << "Opcion de Instagram seleccionada"
+103.    << "Nombre de Usuario"
+104.    >> usuario
+105.    << "Ingrese ciudad "
+106.    >> ciudad
+107.    << "Ingrese Edad"
+108.    >> edad
+109.    << "Correo electrónico"
+110.    >> correo
+111.    << "Usuario: " + usuario + "\n" + "Edad: " + edad + "\n" +
+                    "Ciudad: "+ ciudad + "\n" +
+                    "Correo electrónico: " + correo + "\n"
+112. Fin funcion crearInstagram
+
+xy. funcion crearFlickr()
+	cadena, x(200)[{a-z},{A-Z},{0-100},{BS}] = ""
+	usuario, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	correoE, x(200)[{a-z},{A-Z},{0-100},{BS}]
+	<<"--> OPCION FLICKR SELECCIONADA <--"
+	<<"Ingrese un nombre de Usuario:"
+        >> usuario 
+        >> "Ingrese su Correo Electronico:"
+        >> correoE
+	cadena = "DATOS INGRESADOS FLICKR: \n"
+                + "Nombre de Usuario: "+ usuario + "\n"
+                + "Correo Electronico: " + correoE +"\n"
+	rotarnar cadena
+xy. fin funcion crearFlickr
+        
